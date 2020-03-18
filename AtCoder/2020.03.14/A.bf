@@ -15,14 +15,14 @@
 >,+[-----------[--<[>>++<<-]>>[<<+++++>>-]++++++[<------>-]+<[<+>-]]>[<,+>-]<]<-
 
 # while mem{i}:
-#   j = index(mem neg(1))
+#   j = rindex(mem neg(1) from=i)
 #   k = index(mem 0 from=j)
 #   mem{j} = 0
 #   mem{k} = neg(1)
 #   sub(mem{i} 1)
 [<<+[<+]>-[>-]->[->]>-]
 
-# j = index(mem, neg(1))
+# j = rindex(mem neg(1) from=i)
 # add(j 1)
 # while(mem{j}):
 #   add(mem{j} 48)
